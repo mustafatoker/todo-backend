@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: todo-backend
-          image: mustafatoker/todo-backend:1.0.4
+          image: mustafatoker/todo-backend:latest
           resources:
             requests:
               cpu: "250m"
