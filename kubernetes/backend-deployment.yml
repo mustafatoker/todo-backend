@@ -14,9 +14,11 @@ spec:
         app: todo-backend-app
         tier: backend
     spec:
+      terminationGracePeriodSeconds: 30
       containers:
         - name: todo-backend
           image: mustafatoker/todo-backend:latest
+          imagePullPolicy: "Always"
           resources:
             requests:
               cpu: "250m"
